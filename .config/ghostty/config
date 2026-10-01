@@ -1,0 +1,11 @@
+theme = Ayu
+font-size = 19
+background-blur-radius = 20
+window-decoration = true
+macos-option-as-alt = left
+keybind = alt+left=unbind
+keybind = alt+right=unbind
+background-opacity = 1
+font-family = "JetBrains Mono"
+
+confirm-close-surface = false

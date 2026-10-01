@@ -1,0 +1,15 @@
+[[language]]
+name = "go"
+auto-format = true
+language-servers = ["gopls"]
+formatter = { command = "gofmt" }
+
+[[language]]
+name = "python"
+auto-format = true
+language-servers = ["ty"]
+formatter = { command = "ruff" , args = ["format", "-"]}
+
+[[language]]
+name = "markdown"
+soft-wrap = { enable = true }

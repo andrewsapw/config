@@ -1,0 +1,95 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+    "autosave": {
+        "after_delay": {
+            "milliseconds": 1000
+        }
+    },
+    "agent_servers": {
+        "claude-acp": {
+            "type": "registry"
+        },
+        "codex-acp": {
+            "default_config_options": {
+                "mode": "agent",
+                "reasoning_effort": "high",
+            },
+            "type": "registry",
+        },
+    },
+    "cli_default_open_behavior": "existing_window",
+    "project_panel": {
+        "hide_hidden": true,
+        "hide_gitignore": false,
+        "dock": "left",
+    },
+    "outline_panel": {
+        "dock": "left",
+    },
+    "agent": {
+        "sidebar_side": "right",
+        "dock": "right",
+        "favorite_models": [],
+        "model_parameters": [],
+    },
+    "git_panel": {
+        "dock": "left",
+    },
+    "diff_view_style": "split",
+    "collaboration_panel": {
+        "dock": "left",
+        "button": false,
+    },
+    "title_bar": {
+        "show_sign_in": false,
+        "show_onboarding_banner": false,
+    },
+    "edit_predictions": {
+        "provider": "none",
+        "mode": "subtle",
+        "disabled_globs": ["*"],
+    },
+    "languages": {
+        "Python": {
+            "language_servers": [
+                // Disable basedpyright and enable Ty, and otherwise
+                // use the default configuration.
+                "ty",
+                "ruff",
+                "!basedpyright",
+                "!pylsp",
+            ],
+        },
+    },
+    "show_edit_predictions": false,
+    "relative_line_numbers": "enabled",
+    "terminal": {
+        "shell": {
+            "program": "fish",
+        },
+    },
+    "base_keymap": "VSCode",
+    "disable_ai": false,
+    "telemetry": {
+        "metrics": false,
+        "diagnostics": false,
+    },
+    "vim_mode": true,
+    "ui_font_size": 16,
+    "buffer_font_size": 16,
+    "theme": {
+        "mode": "system",
+        "light": "One Light",
+        "dark": "Ayu Dark",
+    },
+    "journal": {
+        "hour_format": "hour24",
+    },
+}
