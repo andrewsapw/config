@@ -1,3 +1,12 @@
+set -gx EDITOR zed
+set -gx VISUAL $EDITOR
+set -gx PAGER less
+set -gx LANG en_US.UTF-8
+
+fish_add_path /opt/homebrew/bin/
+fish_add_path ~/.cargo/bin
+fish_add_path ~/go/bin
+fish_add_path ~/.local/bin
 
 if status is-interactive
     set -g fish_greeting ""
@@ -28,4 +37,11 @@ if status is-interactive
     if type -q direnv
         direnv hook fish | source
     end
+end
+
+# ---------------------------------------------------------------
+# Machine-specific overrides (kept out of version control)
+# ---------------------------------------------------------------
+if test -f ~/.config/fish/local.fish
+    source ~/.config/fish/local.fish
 end
