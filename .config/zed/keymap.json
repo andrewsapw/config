@@ -34,5 +34,18 @@
     "bindings": {
       "alt-shift-f": "editor::Format"
     }
-  }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-1": "project_panel::Toggle",
+      "cmd-2": "git_panel::Toggle"
+    }
+  },
+  {
+    "context": "GitPanel",
+    "unbind": {
+      "cmd-2": "git_panel::ActivateHistoryTab"
+    }
+  },
 ]
